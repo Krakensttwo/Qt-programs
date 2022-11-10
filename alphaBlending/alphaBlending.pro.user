@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 4.14.0, 2022-11-10T15:58:50. -->
+<!-- Written by QtCreator 4.14.0, 2022-11-10T16:41:17. -->
 <qtcreator>
  <data>
   <variable>EnvironmentId</variable>
@@ -294,9 +294,8 @@
     <valuelist type="QVariantList" key="CustomOutputParsers"/>
     <value type="int" key="PE.EnvironmentAspect.Base">2</value>
     <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">alphaBlending2</value>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.Qt4RunConfiguration:D:/Pliki/Studia/Podstawy grafiki komputerowej/alphaBlending/alphaBlending/alphaBlending.pro</value>
-    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">D:/Pliki/Studia/Podstawy grafiki komputerowej/alphaBlending/alphaBlending/alphaBlending.pro</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.Qt4RunConfiguration:C:/Users/tiber/Documents/GitHub/Qt-programs/AlphaBlending/alphaBlending.pro</value>
+    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">C:/Users/tiber/Documents/GitHub/Qt-programs/AlphaBlending/alphaBlending.pro</value>
     <value type="bool" key="RunConfiguration.UseCppDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">true</value>
     <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>

@@ -21,11 +21,15 @@ MainWindow::MainWindow(QWidget *parent)
     // Tworzymy obiekt klasy QImage o wymiarach równych wymiarom ramki
     // Format_RGB32 to 32 bitowe RGB (z kanałem alfa ustawionym na wartość 255)
     img = new QImage(width, height, QImage::Format_RGB32);
-    //wszystkie obrazy pochodza ze strony wallpaper abyss
+    //https://wall.alphacoders.com/big.php?i=249186
     obrazy[0] = new QImage(":/249186");
+    //https://wall.alphacoders.com/big.php?i=692334
     obrazy[1] = new QImage(":/692334");
+    //https://wall.alphacoders.com/big.php?i=1168402
     obrazy[2] = new QImage(":/1168402");
-    obrazy[3] = new QImage(":/Szkielet");
+    //https://www.hippopx.com/en/dinosaur-bones-rex-toy-grass-reptile-animal-117680
+    obrazy[3] = new QImage(":/Szkielet.jpg");
+    //https://store.kde.org/p/1247368/
     obrazy[4] = new QImage(":/Wrak");
 
     clean();
