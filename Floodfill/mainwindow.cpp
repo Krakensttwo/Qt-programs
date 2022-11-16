@@ -1,4 +1,4 @@
-//Michal Sobczak, alpha blending
+//Michal Sobczak, floodfill
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 

@@ -1,4 +1,4 @@
-//Michal Sobczak, floodfill
+//Michal Sobczak, color models
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
 
@@ -8,7 +8,8 @@
 #include <QMouseEvent>
 #include <QDebug>
 #include <QStack>
-
+#include <QVector>
+#include <cmath>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -33,21 +34,17 @@ private slots:
     void paintEvent(QPaintEvent*);
     void mousePressEvent(QMouseEvent *event);
     void mouseReleaseEvent(QMouseEvent *event);
+    void on_horizontalSlider_sliderMoved(int position);
 
-    void on_radioButton_clicked();
+    void on_horizontalSlider_2_sliderMoved(int position);
 
-    void on_radioButton_2_clicked();
+    void on_horizontalSlider_3_sliderMoved(int position);
 
-    void on_radioButton_3_clicked();
+    void on_horizontalSlider_4_sliderMoved(int position);
 
-    void on_radioButton_4_clicked();
+    void on_horizontalSlider_5_sliderMoved(int position);
 
-    void on_horizontalSlider_valueChanged(int value);
-
-
-    void on_checkBox_stateChanged(int arg1);
-
-    void on_radioButton_5_clicked();
+    void on_horizontalSlider_6_sliderMoved(int position);
 
 private:
     // ui to wskaźnik za pomocą którego mamy dostęp
@@ -67,29 +64,19 @@ private:
     // czyszczenie obrazu (zamalowanie na czarno)
     void clean();
 
-    void rysujOdcinek(int x0, int y0, int x1, int y1);
-    int odcinekLubPunkt=0;
-    int xOdc0, yOdc0, xOdc1, yOdc1;
-    int xEli, yEli;
-
-    // zamalowuje piksel (x,y) na kolor (red,green,blue), domyślnie na biało
+    // zamalowuje piksel (x,y) na kolor (red,green,blue), domyślnie na czarno
     void drawPixel(int x, int y, unsigned char red = 255, unsigned char green = 255, unsigned char blue = 255);
-    void drawOsiemPixel(int x, int y,int x0, int y0);
-    void drawCzteryPixel(int x, int y,int x0, int y0);
-    double rOkrag;
-    void rysujOkrag(int x0, int y0, int x1, int y1);
-    void rysujElipse(int x0, int y0, int x1, int y1);
-    int wpisany=0;
-    int iloscWierzcholkow=3;
-    int bbb=0;
-    void rysujFloodfill(int x, int y);
-    int ffred;
-    int ffgreen;
-    int ffblue;
+    int ffred=0;
+    int ffgreen=0;
+    int ffblue=0;
+    int jakikolor=0;
 
-    struct ffpunkt {
-        int fx;
-        int fy;
-    };
+    int ffh=0;
+    int ffs=0;
+    int ffv=0;
+    void rysujRGB();
+    void rysujHSV();
+
+
 };
 #endif // MAINWINDOW_H
