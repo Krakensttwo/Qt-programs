@@ -1,3 +1,4 @@
+//Michal Sobczak, alpha blending
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 

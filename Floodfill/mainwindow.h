@@ -1,3 +1,4 @@
+//Michal Sobczak, alpha blending
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
 
